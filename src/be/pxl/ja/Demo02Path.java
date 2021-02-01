@@ -13,6 +13,7 @@ public class Demo02Path {
 		for (Path rootDirs: defaultFileSystem.getRootDirectories()) {
 			System.out.println(rootDirs);
 		}
+
 		Path srcDir = Path.of(System.getProperty("user.dir"), "src");
 		System.out.println(srcDir.toAbsolutePath());
 		System.out.println(srcDir.getClass().getName());
