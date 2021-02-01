@@ -10,6 +10,7 @@ public class Demo06BufferedReader {
 	public static void main(String[] args) {
 
 		try (BufferedReader reader =  Files.newBufferedReader(Paths.get("resources/small_file_with_text.txt"))) {
+			//try-with-resources zodat reader automatisch sluit
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				System.out.println(line);

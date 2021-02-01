@@ -8,6 +8,7 @@ public class Student implements Serializable {
 	private String name;
 	private LocalDate graduationDate;
 	private transient LocalDate dateOfBirth;
+	//niet mee geserialiseerd
 
 	public Student(String name, LocalDate dateOfBirth) {
 		this.name = name;
